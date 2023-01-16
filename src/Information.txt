@@ -1,0 +1,17 @@
+Para saber sobre intalaciones y como iniciar 
+
+https://desarrolloweb.com/articulos/controladores-nest
+
+Para rutas ejemplo para products con id, http://localhost:3000/products/884
+http://localhost:3000/vendidos/:vendidosId
+
+
+
+estos es para crear rutas como uste desea se cambia el nombre en categories a vendidos o otro
+nest g controller controllers/products --flat
+
+get para obtener
+put modificar
+post crear
+delete eliminar
+
