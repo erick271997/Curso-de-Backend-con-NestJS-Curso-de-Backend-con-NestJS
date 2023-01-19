@@ -1,3 +1,9 @@
+npm run start:dev
+
+
+nest g s services/products --flat
+para crear servicios
+
 Para saber sobre intalaciones y como iniciar 
 
 https://desarrolloweb.com/articulos/controladores-nest
@@ -14,4 +20,6 @@ get para obtener
 put modificar
 post crear
 delete eliminar
+
+message: `product ${productId}`, se pone asi para se vea en formato JSON
 
