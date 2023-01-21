@@ -38,7 +38,7 @@ export class ProductsController {
 
   @Get(':productId')
   @HttpCode(HttpStatus.ACCEPTED)
-  getProduct(@Param('productId', ParseIntPipe) productId: number) {
+  getOne(@Param('productId', ParseIntPipe) productId: number) {
     // return {
     //   message: `product ${productId}`,
     // };
@@ -62,7 +62,7 @@ export class ProductsController {
     return this.productsService.update(id, payload);
   }
   @Delete()
-  delete(@Param('id') id: number) {
+  delete(@Param('id') id: string) {
     return this.productsService.remove(+id);
   }
 }

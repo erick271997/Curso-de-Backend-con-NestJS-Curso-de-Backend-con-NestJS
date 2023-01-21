@@ -1,5 +1,9 @@
 npm run start:dev
 
+npm install -g @nest/cli
+crear nestjs
+sudo npm i -g @nestjs/cli
+
 
 nest g s services/products --flat
 para crear servicios
