@@ -13,6 +13,7 @@ import {
 } from '@nestjs/common';
 
 import { ProductsService } from '../services/products.service';
+import { CreateProductDto, UpdateProductDto } from '../dtos/products.dtos';
 
 @Controller('products')
 export class ProductsController {
@@ -44,7 +45,7 @@ export class ProductsController {
     return this.productsService.findOne(productId);
   }
   @Post()
-  create(@Body() payload: any) {
+  create(@Body() payload: CreateProductDto) {
     // return {
     //   message: 'accion de crear',
     //   payload,
@@ -52,7 +53,7 @@ export class ProductsController {
     return this.productsService.create(payload);
   }
   @Put(':id')
-  update(@Param('id') id: number, @Body() payload: any) {
+  update(@Param('id') id: number, @Body() payload: UpdateProductDto) {
     // return {
     //   id,
     //   payload,
